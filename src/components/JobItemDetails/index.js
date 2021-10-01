@@ -170,11 +170,7 @@ class AboutJobItem extends Component {
           <h1 className="similar-jobs-heading">Similar Jobs</h1>
           <ul className="similar-jobs-ul-container">
             {similarJobsData.map(eachItem => (
-              <SimilarJobs
-                key={eachItem.id}
-                similarJobData={eachItem}
-                employmentType={employmentType}
-              />
+              <SimilarJobs key={eachItem.id} similarJobData={eachItem} />
             ))}
           </ul>
         </>
